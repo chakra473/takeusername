@@ -8,6 +8,7 @@ namespace ConsoleApp1
         {
             string firstName = FirstName();
             string lastName = LastName();
+            int age =Age();
         }
         public static string FirstName()
         {
@@ -21,6 +22,12 @@ namespace ConsoleApp1
             Console.WriteLine("enter your lastname");
             String lastName = Console.ReadLine();
             return lastName;
+        }
+        public static int Age()
+        {
+            Console.WriteLine("enter your age");
+            int age = Convert.ToInt32(Console.ReadLine());
+            return age;
         }
 
     }
