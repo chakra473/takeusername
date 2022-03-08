@@ -9,6 +9,8 @@ namespace ConsoleApp1
             string firstName = FirstName();
             string lastName = LastName();
             int age =Age();
+            string city=City();
+            Console.WriteLine("Hi "+firstName + " " + lastName + " your age is " + age+" your city is "+city);
         }
         public static string FirstName()
         {
@@ -28,6 +30,12 @@ namespace ConsoleApp1
             Console.WriteLine("enter your age");
             int age = Convert.ToInt32(Console.ReadLine());
             return age;
+        }
+        public static string City()
+        {
+            Console.WriteLine("enter your city");
+            string city = Console.ReadLine();
+            return city;
         }
 
     }
