@@ -7,6 +7,7 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             string firstName = FirstName();
+            string lastName = LastName();
         }
         public static string FirstName()
         {
@@ -15,5 +16,12 @@ namespace ConsoleApp1
             return firstName;
 
         }
+        public static string LastName()
+        {
+            Console.WriteLine("enter your lastname");
+            String lastName = Console.ReadLine();
+            return lastName;
+        }
+
     }
 }
